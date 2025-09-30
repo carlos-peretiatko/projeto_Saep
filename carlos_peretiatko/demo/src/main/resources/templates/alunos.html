@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <a href="/">Home</a><br>
+            <a href="/alunos.html">Alunos</a><br>
+            <a href="/contato.html">Contato</a><br>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Nossos produtos</h1>
+            <h2>Lista de Produtos</h2>
+            <ul>
+                <!--th:each faz um loop for sobre a lista "alunos"-->
+                <li th:each="p:${alunos}" th:text="${p}"></li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

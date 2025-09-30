@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Bem-vindo</h1>
+            
+
+            <h2 th:text = "${mensagem}">Mensagem de teste</h2>
+
+            <br>
+
+            <a th:href="@{/alunos}">Lista</a>
+        </section>
+        <section>
+
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
